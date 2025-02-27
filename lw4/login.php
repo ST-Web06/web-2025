@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"></html>
 <head>
 </head>
 <body>
-
     <img src="LogIm3.jpg"/> 
     <p>
         <h1> 
-            "Электронная почта"
+            <div>Эл. почта</div>
             <input type="text">
         </h1>
+        <h2>
+            <div>Введите эл. почту в формате ******@*******</div>
+        <h2>
     </p>
     <p>    
         <h1>
-            "Пароль"
+            <div>Пароль</div>
             <input type="password">
         </h1>
         <h2>
             <input type="submit"
         </h2>    
-    </p>
-
-    
+    </p>  
 </body>
 </html>
