@@ -5,7 +5,7 @@
             case 0:
                 echo 'Ноль';
                 break;
-           case 1:
+            case 1:
                 echo 'Один';
                 break;
             case 2:
