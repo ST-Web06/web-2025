@@ -1,5 +1,5 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $data = explode(' ', ($_POST['data']));
         $data_ar = [];
         foreach ($data as $sym) {
