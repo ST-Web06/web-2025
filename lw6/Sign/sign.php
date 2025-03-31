@@ -3,7 +3,7 @@
         $data = explode('.', $_POST['sign']);
         if ((20 < (int)$data[0]) and ((int)$data[1] == 3) or (21 > (int)$data[0]) and ((int)$data[1] == 4)) {
             echo 'Овен';
-        }
+        } 
         if ((20 < (int)$data[0]) and ((int)$data[1] == 4) or (21 > (int)$data[0]) and ((int)$data[1] == 5)) {
             echo 'Телец';
         }
