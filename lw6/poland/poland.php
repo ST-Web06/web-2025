@@ -1,4 +1,11 @@
 <?php
+    function results()
+    
+    
+    
+    
+    
+    
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $data = explode(' ', ($_POST['data']));
         $data_ar = [];
