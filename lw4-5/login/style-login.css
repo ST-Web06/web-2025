@@ -7,7 +7,7 @@
 .title {
     font: 700 140px/1.28 "Golos UI", sans-serif;
     color: #222222;
-    letter-spacing: -1.5px;
+    margin: 0;           /* Убираем стандартные отступы <h1> */
 }
 
 .image {
@@ -39,10 +39,6 @@
     outline: none;
 }
 
-.input-error {
-    border: 1px solid #E64646;
-}
-
 .input:focus {
     border: 1px solid #3F8AE0;
 }
@@ -52,10 +48,6 @@
     margin-bottom: 15px;
     font: 400 13px/ 1.2 "Golos UI", sans-serif;
     color: #808080; 
-}
-
-.input-info-error {
-    color: #E64646;
 }
 
 .button {
@@ -77,4 +69,32 @@
 .button:disabled {
     border: 2px solid #b4b4b4;
     background-color: #b4b4b4;
+}
+
+.logIm {
+    width: 462px;
+    height: 501px;
+    display: block; /* Убирает лишние отступы у <img> */
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* Заголовок сверху, остальное — в колонку*/
+    align-items: center;   /* Центрируем содержимое */
+    gap: 40px;            
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center;    /* Центрирование по вертикали */
+    font-family: "Golos UI", sans-serif;
+}
+
+.p {
+    display: flex;
+    align-items: center;  /* Картинка и форма в одну строку */
+    gap: 60px;           /* Отступ между картинкой и формой */
 }
