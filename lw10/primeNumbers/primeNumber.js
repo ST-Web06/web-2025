@@ -3,7 +3,7 @@ document.getElementById('primeNumber').addEventListener('click', function(e) {
     
     let input = document.getElementById('prime').value;
 
-    let data = [12, 13, 23, 42, -12, 44, '123', 'as'];
+    let data = [12, 13, 23, 42, -13, 44, '123', 'as', {}];
 
     let intNumbersArray = [];
     
@@ -44,9 +44,13 @@ function primeNumbers(numbersArray){
             console.log(numbersArray[num], "не является числом");
         } else {
 
-        if (Math.abs(numbersArray[num]) === 1 || Math.abs(numbersArray[num]) === 2){
+        if (numbersArray[num] === 1 || Math.abs(numbersArray[num]) === 2){
             result[num] = true;
             continue;
+        }
+        if (numbersArray[num] < 0){
+            result[num] = false;
+            continue;    
         }
         for (let i = 2; i < Math.abs(numbersArray[num]); i++) {
             if  (Math.abs(numbersArray[num]) % i === 0){
