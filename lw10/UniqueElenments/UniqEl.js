@@ -1,7 +1,7 @@
-document.getElementById('form').addEventListener('submit', function(e) {
+document.getElementById('form').addEventListener('click', function(e) {
     e.preventDefault();     
     
-    let data = ['привет', 'привет', 4, 6, 6, 9];
+    let data = ['привет', 'привет', 4, 6, 6, 9, 66];
     let buf = [];
 
     for (let d in data){
@@ -19,7 +19,6 @@ function uniqElem(arr){
     for (let i in arr){
         let counter = 0
         for (let k in arr){
-            console.log(i, k);
             if (arr[i] == arr[k]){
                 if (k < i){
                     break;
