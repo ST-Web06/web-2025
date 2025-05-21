@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.img {
+    width: 322px;
+    height: 322px;
+}
+
+.userProfile {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+.images {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center; 
+      
+} 
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+.sidebarIcon {
+    
+}

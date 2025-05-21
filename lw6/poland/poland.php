@@ -1,41 +1,30 @@
 <?php
-    function results() 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $data = explode(' ', ($_POST['data']));
-        $data_ar = [];
-        foreach ($data as $sym) {
-            if ($sym == '+' or $sym == '-' or $sym == '/' or $sym == '*'){
-                switch($sym){
-                    case '+':
-                    	$res = 0;
-                        foreach ($data_ar as $num){
-                        	$res += $num;
-                        }
-                        break;
-                    case '-':
-                    	$res = $data_ar[0] * 2;
-                        foreach ($data_ar as $num){
-                        	$res -= $num;
-                        }
-                        break;
-                    case '*':
-                    	$res = 1;
-                        foreach ($data_ar as $num){
-                            $res *= $num;
-                        }
-                        break;
-                    case '/':
-                    	$res = $data_ar[0] * $data_ar[0];
-                        foreach ($data_ar as $num){
-                            $res /= $num;
-                        }
-                        break;
-                }
-                $data_ar = [$res];
-            } else {
-                array_push($data_ar, (int)$sym);
-            }
+
+$input = $_POST["poland"];
+$input = explode(" ", $input);
+$data_ar = [];
+foreach ($input as $element)
+{
+    if (is_numeric($element))
+        array_push($data_ar, $element);
+    else
+    {
+        $secNum = array_pop($data_ar);
+        $firstNum = array_pop($data_ar);
+        switch ($element)
+        {   
+            case "+":
+                array_push($data_ar, $firstNum + $secNum);
+                break;
+            case "-":
+                array_push($data_ar, $firstNum - $secNum);
+                break;
+            case "*":   
+                array_push($data_ar, $firstNum * $secNum);
+                break;
         }
-        echo $data_ar[0];
     }
-?> 
+}
+echo array_pop($data_ar);
+
+?>

@@ -1,4 +1,4 @@
-document.getElementById('event').addEventListener('click', function(e) {
+    document.getElementById('event').addEventListener('click', function(e) {
     e.preventDefault();
 
     let password = getPassword(10);
@@ -36,7 +36,6 @@ function getPassword(n){
     }
     return resArr;
 }
-    
 
 function randomSymb(i){
     if (i === -1){
