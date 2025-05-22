@@ -14,42 +14,19 @@
 <body>
     <h1>Список пользователей</h1>
     
-    <?php    
-    // Проверяем, есть ли данные
-    if ($users && is_array($users)) {
-        foreach ($users as $user) {
-            if ($user['id'] === 1){
-                foreach ($posts as $post){
-                    if ($post['user_id'] === $user['id']){
-                        echo '<span>ASD</span>';
-                        
-                    }
+    <?php
+    foreach ($posts as $post) {
+            // Находим пользователя для этого поста
+            $user = null;
+            foreach ($users as $u) {
+                if ($u['id'] == $post['user_id']) {
+                    $user = $u;
+                    echo '<span>|Post has founded| </span>';
+                    break;
                 }
-            }
-            
-        //     {<div class="user">
-        //     <img class="avaratIvana" src="images/avatarIvan.png" alt="Аватар Ивана" />
-        //     <span class="nameIvan">Ваня Денисов</span>
-        //     <img class="edit" src="images/Edit.png" alt="edit" />
-        // </div>
-       
-        // <div class="postIvan">
-        //     <img class="postImage" src="images/ivanPostImage.png" />
-        //     <div class="likes">
-        //         <img class="like" src="images/heart.png" alt="like" />
-        //         <span class="subLike">203</span>
-        //     </div>
-        //     <span class="description">
-        //         Так красиво сегодня на улице! Настоящая зима)) Вспоминается 
-        //         Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в гор...»
-        //       </span>
-        //     <p><span class="more">ещё</span></p>
-        //     <p><span class="time">2 часа назад</span></p>
-        // </div>}
-        }
-    } else {
-        echo '<p>Данные не найдены или файл поврежден</p>';
-    }
+            } 
+    }   
+    
     ?>
 </body>
 </html>
