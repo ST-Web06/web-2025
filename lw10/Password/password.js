@@ -17,13 +17,13 @@ function notRepeating(obj, n){
 
 function getPassword(n){
     let resArr = [];
-    let caseNum = -1;
+    let randomSymbol = -1;
     let individVal = 6;
     if (n < 6){
         individVal = n
     }
     for(let i = 0; i < n; i++){
-        resArr[i] = randomSymb(caseNum);
+        resArr[i] = randomSymb(randomSymbol);
     }
 
     let randIndArr = [];

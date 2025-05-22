@@ -2,7 +2,7 @@ document.getElementById('event').addEventListener('click', function(e) {
     e.preventDefault();
 
     const nums = { a: 4, b: 2, c: 3 };
-    let res = mapObject(nums, x => x / 2);
+    let res = mapObject(nums, x => x * 2);
     console.log(res);
 });
 
