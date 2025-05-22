@@ -13,7 +13,7 @@
 .title {
     font: 700 140px/1.28 "Golos UI", sans-serif;
     color: #222222;
-    margin: 0;           /* Убираем стандартные отступы <h1> */
+    margin: 0;           
 }
 
 .image {
@@ -80,27 +80,27 @@
 .logIm {
     width: 462px;
     height: 501px;
-    display: block; /* Убирает лишние отступы у <img> */
+    display: block;
     
 }
 
 .content {
     display: flex;
-    flex-direction: column; /* Заголовок сверху, остальное — в колонку*/
-    align-items: center;   /* Центрируем содержимое */
+    flex-direction: column;
+    align-items: center;  
     gap: 40px;            
 }
 
 body {
     margin: 0;
     display: flex;
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center;    /* Центрирование по вертикали */
+    justify-content: center; 
+    align-items: center;    
     font-family: "Golos UI", sans-serif;
 }
 
 .p {
     display: flex;
-    align-items: center;  /* Картинка и форма в одну строку */
-    gap: 60px;           /* Отступ между картинкой и формой */
+    align-items: center;  
+    gap: 60px;           
 }

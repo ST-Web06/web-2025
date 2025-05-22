@@ -1,60 +1,9 @@
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-.user-info__avatar {
-    border-radius: 6px;
-    max-width: 100%;
-    width: 33px;
-    height: 33px;
-}
-
-.user-info__name {
-    font: 500 14px/1.2 "Golos UI", sans-serif;
-    letter-spacing: -0.15px;
-    color: #222222;
-    display: block;
-    align-content: center;
-    margin-left: 10px;
-}
-
-.post__likes {
-    font: 400 15px/1.2 "Golos UI", sans-serif;
-    letter-spacing: -0.15px;
-    margin-left: 3px;
-}
-
-.post__text {
-    font: 400 15px/1.2 "Golos UI", sans-serif;
-    letter-spacing: -0.15px;
-    color: #222222;
-    display: block;
-    max-width: 480px;
-    text-align: justify;
-}
-
-.post__more-btn {
-    font: 400 15px/1.2 "Golos UI", sans-serif;
-    display: block;
-    letter-spacing: -0.15px;
-    color: #808080;
-    margin-bottom: 8px;
-    max-width: 28px;
-}
-
-.post__time {
-    font: 400 14px/1.2 "Golos UI", sans-serif;
-    letter-spacing: -0.15px;
-    color: #222222;  
-    opacity: 50%;
-    display: block;
-    margin-bottom: 36px;
-    max-width: 100px;
-}
-
-.menu__item {
+/* .sidebar {
     width: 40px;
     margin-bottom: 16px;
     padding: 8px;
@@ -62,66 +11,4 @@
     position: relative;
     left: 0;
     cursor: pointer;
-}
-
-.menu__item--active::after {
-    display: block;
-    content: '';
-    width: 4px;
-    height: 4px;
-    margin: auto;
-    background: #222222;
-    border-radius: 50%;
-}   
-
-.post__photo {
-    display: block;
-    width: 474px;
-    height: 474px;
-    margin-bottom: 16px;
-}
-
-.user-info {
-    max-width: 474px;
-    margin: 0 auto 16px;
-    display: inline-flex;
-    width: 474px;   
-}
-
-.post__reactions {
-    margin-bottom: 16px;
-    border-radius: 8px;
-    padding: 6px 12px;
-    background-color: rgba(34, 34, 34, 0.05);
-    display: inline-flex;
-}
-
-.post {
-    margin: 0 auto 0;
-
-    max-width: 474px;
-}
-
-.menu {
-    position: fixed;
-    max-width: 74px;
-    height: 100%;
-    width: 80px;
-    outline: auto;
-    outline-color: rgba(34, 34, 34, 0.05);
-}
-
-.page {
-    display: inline-flex;
-    flex-direction: row;
-}
-
-.post-place {
-    margin: 73px auto 0;
-    width: 100vw;
-}
-
-.user-info__edit-icon {
-    display: block;
-    margin-left: auto;
-}
+} */
