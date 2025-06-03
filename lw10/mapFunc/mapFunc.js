@@ -10,7 +10,7 @@ function mapObject(obj, callback) {
     const result = {};
     
     for (const key in obj) {
-      result[key] = callback(obj[key], key, obj);
+      result[key] = callback(obj[key]);
     }
     
     return result;

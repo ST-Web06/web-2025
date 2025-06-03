@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 63.3%;
+}
+
+.input {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid #000000;
+    background-color: #F2F3F5;
+    border-radius: 10px;
+    padding: 13px 12px;
+    font: 400 15px/1.2 "Golos UI", sans-serif;
+    transition: border 0.3s ease;
+    outline: none;
+}
+
+.title {
+    font-family: "Golos UI", sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 180px;
+    color: #222222;
+    letter-spacing: -1.5px;
+    position: absolute;
+    top: -106.63px;
+    left: -90px;
+    z-index: 1;
+}
+
+.image {
+    width: 462px;   
+    height: 501px;
+}
+
+.form {
+    width: 343px;
+    height: 251px;
+}
+
+
+.label {
+    display: block;
+    font: 400 15px/1.2 "Golos UI", sans-serif;
+    color: #222222;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+}
+
+.decor {
+    position: relative;
+
+}
+
+.label {
+    display: block;
+    font: 400 15px/1.2 "Golos UI", sans-serif;
+    color: #222222;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+}
+
+.input-info {
+    display: block;
+    margin-bottom: 15px;
+    font: 400 13px/ 1.2 "Golos UI", sans-serif;
+    color: #808080; 
+}

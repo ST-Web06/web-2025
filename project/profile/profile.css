@@ -26,7 +26,12 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-}
-.sidebarIcon {
     
+} 
+.sidebarIcon {
+    margin: 16px;
+    width: 24px;
+    height: 24px;
+    content: '.';   
 }
+

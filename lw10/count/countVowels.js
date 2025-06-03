@@ -2,13 +2,14 @@ document.getElementById('form').addEventListener('submit', function(e) {
     e.preventDefault();     
     
     let input = document.getElementById('string').value;
-    let result = countVowels(input);
+    let result = countVowels(input.toLowerCase());
     console.log('Введёные данные:', input, ' - ', result.length, ':', result.join(' '));
 });
 function countVowels (string) {
     let cnt = 0;
     let arr = []
     for (let i of string.split('')){
+        
         switch (i) {
             case('а'): arr.push('а'); break
             case('е'): arr.push('е'); break

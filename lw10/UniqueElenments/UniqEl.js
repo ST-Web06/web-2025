@@ -1,11 +1,11 @@
 document.getElementById('form').addEventListener('click', function(e) {
     e.preventDefault();     
     
-    let data = ['привет', 'привет', 4, 6, 6, 9, 66];
+    let input = ['привет', 'привет', 4, 6, 6, 9, 66];
     let buf = [];
 
-    for (let d in data){
-        buf.push('' + data[d]);
+    for (let elem in input){
+        buf.push('' + input[elem]);
     }
     console.log('Введёные данные ', buf);
 
@@ -14,22 +14,14 @@ document.getElementById('form').addEventListener('click', function(e) {
     console.log(result);
 });
 
-function uniqElem(arr){
-    let res = {};
-    for (let i in arr){
-        let counter = 0
-        for (let k in arr){
-            if (arr[i] == arr[k]){
-                if (k < i){
-                    break;
-                } else {
-                    counter += 1;
-                }
-            }
-            if (k == arr.length - 1){
-                res[arr[i]] = counter;
-            }
-        }   
+function uniqElem(arr) {
+    let res = {}
+    for (item of arr) {
+        if (item in res) {
+            res[item] += 1
+        } else {
+            res[item] = 1
+        }
     }
     return res
 }

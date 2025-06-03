@@ -1,7 +1,7 @@
     document.getElementById('event').addEventListener('click', function(e) {
     e.preventDefault();
 
-    let password = getPassword(10);
+    let password = getPassword(4);
     console.log(password.join(''));
 });
 const specialChars = '!@#$%^&*()_+-=[]{}|;:,.<>?';

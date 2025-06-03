@@ -1,9 +1,16 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh; /* Минимальная высота = высоте экрана */
+  display: flex;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center;     /* Центрирование по вертикали */
+}
 
 .info {
     color: #222222;
@@ -11,9 +18,15 @@
 }
 
 .title {
-    font: 700 140px/1.28 "Golos UI", sans-serif;
+    font-family: "Golos UI", sans-serif;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 180px;
     color: #222222;
-    margin: 0;           
+    letter-spacing: -1.5px;
+    position: absolute;
+    top: -106.63px;
+    left: -90px;
 }
 
 .image {
@@ -21,8 +34,10 @@
 }
 
 .form {
-    max-width: 343px;
+    width: 343px;
+    height: 251px;
 }
+
 
 .label {
     display: block;
@@ -86,21 +101,17 @@
 
 .content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;  
-    gap: 40px;            
+    gap: 60px;            
 }
 
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    font-family: "Golos UI", sans-serif;
+.enter{
+   justify-content: center;
+   width: 343px; 
+   height: 251px; 
 }
 
-.p {
-    display: flex;
-    align-items: center;  
-    gap: 60px;           
+.decor{
+    position: relative;
 }
