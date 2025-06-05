@@ -3,52 +3,58 @@
 
 <head>
     <title>Home</title>
+    <meta charset="UTF-8">
     <link href="style-home.css" rel="stylesheet">
     <link href="fonts/font.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="sidebar">
-        <img class="sidebarIcon" src="images/homeIm.png" alt="Иконка домашней страницы">
-        <img class="sidebarIcon" src="images/userIm.png" alt="Иконка профиля">
-        <img class="sidebarIcon" src="images/plusIm.png" alt="Сделать пост">
-    </div>
-    <div class="content">
-        <div class="post">
-            <div class="user">
-                <img class="avatar" src="images/avatarIvan.png" alt="Аватар Ивана" />
-                <span class="name">Ваня Денисов</span>
-                <img class="edit" src="images/Edit.png" alt="edit" />
-            </div>
-            <img class="postImage" src="images/ivanPostImage.png" />
-            <div class="likes">
-                <img class="like" src="images/heart.png" alt="like" />
-                <span class="subLike">203</span>
-            </div>
-            <span class="description">
-                Так красиво сегодня на улице! Настоящая зима)) Вспоминается
-                Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в гор...»
-            </span>
-            <p><span class="more">ещё</span></p>
-            <p><span class="time">2 часа назад</span></p>
+    <div class="page">
+        <div class="menu">
+            <a href="../home"><img class="menu__sidebarIcon menu__sidebarIcon--active" src="./images/homeIm.png"
+                    alt="Иконка домашней страницы"> </a>
+            <a href="../profile"><img class="menu__sidebarIcon" src="../images/userIm.png" alt="Иконка профиля"> </a>
+            <img class="menu__sidebarIcon" src="../images/plusIm.png" alt="Сделать пост">
         </div>
-
-
-
-        <div class="post">
-            <div class="user">
-                <img class="avarat" src="images/avatalLiza.png" alt="Аватар Лизы" />
-                <span class="name">Лиза Дёмина</span>
-                <img class="edit" src="images/Edit.png" alt="edit" />
+        <div class="content">
+            <div class="post">
+                <div class="post__header">
+                    <img class="post__avatar" src="images/avatarIvan.png" alt="Аватар Ивана" />
+                    <span class="post__name">Ваня Денисов</span>
+                    <img class="post__edit" src="images/Edit.png" alt="edit" />
+                </div>
+                <img class="post__image" src="../images/ivanPostImage.png" alt="изображение поста Ивана" />
+                <button class="post__likes">
+                    <img class="post__heart" src="../images/heart.png" alt="like" />
+                    <span class="post_amountLike">203</span>
+                </button>
+                <span class="post__description">
+                    Так красиво сегодня на улице! Настоящая зима)) Вспоминается
+                    Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в гор...»
+                </span>
+                <p class="post__more">ещё</p>
+                <p class="post__time">2 часа назад</p>
             </div>
-            <img class="postImage" src="images/lizaPostImage.png" />
-            <div class="likes">
-                <img class="like" src="images/heart.png" alt="like" />
-                <span class="subLike">534</span>
+
+            
+            <div class="post">
+                <div class="post__header">
+                    <img class="post__avatar" src="images/avatalLiza.png" alt="Аватар Лизы" />
+                    <span class="post__name">Лиза Дёмина</span>
+                    <img class="post__edit" src="images/Edit.png" alt="edit" />
+                </div>
+                <img class="post__image" src="../images/lizaPostImage.png" alt="изображение поста Ивана" />
+                <button class="post__likes">
+                    <img class="post__heart" src="../images/heart.png" alt="like" />
+                    <span class="post_amountLike">20</span>
+                </button>
+                <span class="post__description">
+                    Привет
+                </span>
+                <p class="post__more">ещё</p>
+                <p class="post__time">2 часа назад</p>
             </div>
-            <p><span class="time">1 день назад</span></p>
         </div>
-    </div>
 </body>
 
 </html>

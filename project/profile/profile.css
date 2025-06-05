@@ -1,8 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-  }
+    padding: 0;
+    margin: 0;
+    font-family: "Golos UI", sans-serif;
+}
 
 .img {
     width: 322px;
@@ -11,7 +12,7 @@
 
 .userProfile {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -19,19 +20,37 @@
 .images {
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: center; 
-      
-} 
+    justify-content: center;
+
+}
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    
-} 
-.sidebarIcon {
+
+}
+
+.menu__sidebarIcon {
+
     margin: 16px;
     width: 24px;
     height: 24px;
-    content: '.';   
+    margin: 16px;
+    position: relative;
+    left: 0;
+    cursor: pointer;
 }
 
+.menu {
+    position: fixed;
+    max-width: 74px;
+    height: 100%;
+    width: 80px;
+    border: 2px solid #2222220D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0%;
+    padding-top: 40px;
+
+}
