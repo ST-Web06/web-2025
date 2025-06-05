@@ -9,18 +9,21 @@
 
 <body>
     <div class="content">
-        <div class="decor">
-            <h1 class="title">Войти</h1>
-            <img class="logIm" src="LogIm3.png" alt="изображение логинации" />
+        <div class="login-enter">
+            <h1 class="login-enter__title">Войти</h1>
+            <img class="login-enter__logIm" src="LogIm3.png" alt="изображение логинации" />
         </div>
-        <div class="enter">
-            <label class="label" for="email">Электропочта</label>
-            <input id="email" type="email" class="input" />
-            <span class="input-info">Введите электропочту в формате *****@***.**</span>
-            <label class="label" for="password">Пароль</label>
-            <input id="password" type="password" class="input" />
-            <input type="submit" class="button" />
-        </div>
+        <form class="authentication">
+            <label class="authentication__info" for="email">Электропочта</label>
+            <input id="email" type="email" class="authentication__user-data" />
+            <span class="authentication__extra-info">Введите электропочту в формате *****@***.**</span>
+            <label class="authentication__info" for="password">Пароль</label>
+            <div class="authentication__password">
+                <input id="password" type="password" class="authentication__user-data" />
+                <img src="Eye-off.svg" class="authentication__eye-off" alt="значок закрытого глаза"/>
+            </div>
+            <input type="submit" class="authentication__submit-button" value="Отправить" />
+        </form>
     </div>
 </body>
 

@@ -5,11 +5,11 @@
 }
 
 body {
-  margin: 0;
-  min-height: 100vh; /* Минимальная высота = высоте экрана */
-  display: flex;
-  justify-content: center; /* Центрирование по горизонтали */
-  align-items: center;     /* Центрирование по вертикали */
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
@@ -17,7 +17,7 @@ body {
     font-family: "Golos UI";
 }
 
-.title {
+.login-enter__title {
     font-family: "Golos UI", sans-serif;
     font-weight: 700;
     font-size: 140px;
@@ -39,7 +39,7 @@ body {
 }
 
 
-.label {
+.authentication__info {
     display: block;
     font: 400 15px/1.2 "Golos UI", sans-serif;
     color: #222222;
@@ -47,31 +47,33 @@ body {
     margin-bottom: 5px;
 }
 
-.input {
+.authentication__user-data {
     display: block;
     margin-bottom: 5px;
     width: 100%;
-    border: 1px solid #000000;
     background-color: #F2F3F5;
     border-radius: 10px;
     padding: 13px 12px;
     font: 400 15px/1.2 "Golos UI", sans-serif;
     transition: border 0.3s ease;
     outline: none;
+    height: 48px;
+    border: 0;
 }
 
 .input:focus {
     border: 1px solid #3F8AE0;
 }
 
-.input-info {
+.authentication__extra-info {
     display: block;
     margin-bottom: 15px;
     font: 400 13px/ 1.2 "Golos UI", sans-serif;
-    color: #808080; 
+    color: #808080;
+    line-height: 18px;
 }
 
-.button {
+.authentication__submit-button {
     display: block;
     margin-top: 32px;
     width: 100%;
@@ -81,7 +83,9 @@ body {
     padding: 14.5px;
     border: 2px solid #222222;
     color: #FFFFFF;
+    height: 48px;
 }
+
 
 .button:focus {
     border: 2px solid #3F8AE0
@@ -92,26 +96,40 @@ body {
     background-color: #b4b4b4;
 }
 
-.logIm {
+.login-enter__logIm {
     width: 462px;
     height: 501px;
     display: block;
-    
+
 }
 
 .content {
     display: flex;
     justify-content: space-between;
-    align-items: center;  
-    gap: 60px;            
+    align-items: center;
+    gap: 107px;
 }
 
-.enter{
-   justify-content: center;
-   width: 343px; 
-   height: 251px; 
+.authentication {
+    justify-content: center;
+    width: 343px;
+    height: 251px;
 }
 
-.decor{
+.login-enter {
+    position: relative;
+}
+
+.authentication__eye-off {
+    width: 24px;
+    height: 24px;
+    left: 307px;
+    position: absolute;
+
+}
+
+.authentication__password {
+    display: flex;
+    align-items: center;
     position: relative;
 }

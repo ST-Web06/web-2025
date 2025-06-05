@@ -1,7 +1,7 @@
 document.getElementById('form').addEventListener('click', function(e) {
     e.preventDefault();     
     
-    let input = ['привет', 'привет', 4, 6, 6, 9, 66];
+    let input = ['привет', 'пять', 'привет', 4, 6, 6, 9, 66];
     let buf = [];
 
     for (let elem in input){
