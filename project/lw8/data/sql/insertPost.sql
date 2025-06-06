@@ -2,7 +2,7 @@ INSERT INTO
     post (
         user_id,
         posted_at,
-        text,
+        content,
         likes
     )
 VALUES (

@@ -1,0 +1,18 @@
+[
+    {
+        "user_id": "1", 
+        "email": "vanya_denisov@mail.ru", 
+        "password": "vanya",
+        "name": "Ваня Денисов",
+        "profile_avatar": "avatarIvan.png",
+        "about_me": "Привет! Я системный аналитик в ACME :) Тут моя жизнь только для самых классных!"
+    },
+    {
+        "user_id": "2",
+        "email": "lisa_demina@mail.ru",
+        "password": "lisa",
+        "name": "Лиза Дёмина",
+        "profile_avatar": "avatarLiza.png",
+        "description": "Я Лиза"
+    }
+]

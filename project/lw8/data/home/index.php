@@ -28,13 +28,13 @@
             </a>
             <img class="menu__sidebarIcon" src="../image/plusIm.png" alt="иконка добавить">
         </div>
-        <div class="content">  
+        <div class="container">  
         <?php            
             foreach ($posts as $post) {
                 $user_data = $users[array_search($post["author_id"], array_column($users, "id"))];
                 $images_data = $images[array_search($post["id"], array_column($images, "post_id"))];
                 if (!$filterByUserId || !$isValidUser || $user_data['id'] == $filterByUserId) {
-                    makePost($post, $user_data, $images_data);
+                    makePost($post, $user_data);
                 }
             }
         ?>    
