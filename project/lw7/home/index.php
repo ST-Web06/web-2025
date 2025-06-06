@@ -4,7 +4,6 @@ $posts = json_decode(file_get_contents("../data/posts.json"), true);
 require_once 'makePost.php';
 
 $filterByUserId = isset($_GET['id']) ? (int) $_GET['id'] : null;
-var_dump($filterByUserId);
 
 // Используем array_search для проверки существования user_id
 $userKey = ($filterByUserId !== null) ? array_search($filterByUserId, array_column($users, 'user_id')) : false;

@@ -1,21 +1,21 @@
 [
     {
         "user_id": "1",
-        "image": "ivanPostImage.png",
+        "images": ["ivanPostImage.png"],
         "content": "Так красиво сегодня на улице! Настоящая зима)) Вспоминается Бродский: «Поздно ночью, в уснувшей долине, на самом дне, в гор...»",
         "posted_at": "1744908125",
         "likes": "204"
     },
     {
         "user_id": "2",
-        "image": "lizaPostImage.png",
+        "images": ["lizaPostImage.png"],
         "content": "",
         "posted_at": "1744735325",
         "likes": "20"
     },
     {
         "user_id": "2",
-        "image": "eight.jpg",
+        "images": ["eight.jpg"],
         "content": "Вот это да",
         "posted_at": "1749011484",
         "likes": "323"
