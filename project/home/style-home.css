@@ -33,6 +33,17 @@
 
 }
 
+.menu__sidebarIcon {
+
+    margin: 16px;
+    width: 24px;
+    height: 24px;
+    margin: 16px;
+    position: relative;
+    left: 0;
+    cursor: pointer;
+}
+
 .menu__sidebarIcon--active::after {
     display: block;
     content: '';

@@ -8,36 +8,36 @@ function connectDatabase(): PDO
     return new PDO($dsn, $user, $password);
 }
 
-function savePostToDatabase(PDO $connection, array $postParams, array $images): int
-{
-    if (is_numeric($postParams['created_by_user_id']) && strlen($postParams['content']) < 2000) {
-        $query = <<<SQL
-            INSERT INTO post (content, created_by_user_id, created_at, likes)
-            VALUES (:content, :created_by_user_id, :created_at, :likes)
-        SQL;
-        $statement = $connection->prepare($query);
-        $statement->execute([
-            ':content' => $postParams['content'],
-            ':created_by_user_id' => $postParams['created_by_user_id'],
-            ':created_at' => date('Y-m-d H:i:s'),
-            ':likes' => $postParams['likes'] ?? 0
-        ]);
-        $id = $connection->lastInsertId();
-        foreach ($images as $image) {
-            $query = <<<SQL
-            INSERT INTO image (post_id, image)
-            VALUES (:post_id, :image);
-        SQL;
-            $statement = $connection->prepare($query);
-            $statement->execute([
-                ':post_id' => $id,
-                ':image' => $image
-            ]);
-        }
-    }
+// function savePostToDatabase(PDO $connection, array $postParams, array $images): int
+// {
+//     if (is_numeric($postParams['created_by_user_id']) && strlen($postParams['content']) < 2000) {
+//         $query = <<<SQL
+//             INSERT INTO post (content, created_by_user_id, created_at, likes)
+//             VALUES (:content, :created_by_user_id, :created_at, :likes)
+//         SQL;
+//         $statement = $connection->prepare($query);
+//         $statement->execute([
+//             ':content' => $postParams['content'],
+//             ':created_by_user_id' => $postParams['created_by_user_id'],
+//             ':created_at' => date('Y-m-d H:i:s'),
+//             ':likes' => $postParams['likes'] ?? 0
+//         ]);
+//         $id = $connection->lastInsertId();
+//         foreach ($images as $image) {
+//             $query = <<<SQL
+//             INSERT INTO image (post_id, image)
+//             VALUES (:post_id, :image);
+//         SQL;
+//             $statement = $connection->prepare($query);
+//             $statement->execute([
+//                 ':post_id' => $id,
+//                 ':image' => $image
+//             ]);
+//         }
+//     }
 
-    return (int) $connection->lastInsertId();
-}
+//     return (int) $connection->lastInsertId();
+// }
 
 function getAllPostsId(PDO $connection): array 
 {
@@ -78,7 +78,7 @@ function findUserInDatabaseUser(PDO $connection, int $id): ?array
     $row = $statement->fetch(PDO::FETCH_ASSOC);
     return $row ?: null;
 }
-function findPhoto(PDO $connection, int $post_id): ?array
+function findImages(PDO $connection, int $post_id): ?array
 {
     $query = <<<SQL
         SELECT image 
@@ -90,10 +90,10 @@ function findPhoto(PDO $connection, int $post_id): ?array
     return $row ?: [];
 }
 
-function getCountPosts(PDO $connection, string $database): int
-{
-    $query = "SELECT COUNT(*) FROM $database";
-    $statement = $connection->query($query);
-    $count = $statement->fetch(PDO::FETCH_NUM);
-    return $count[0];
-}
+// function getCountPosts(PDO $connection, string $database): int
+// {
+//     $query = "SELECT COUNT(*) FROM $database";
+//     $statement = $connection->query($query);
+//     $count = $statement->fetch(PDO::FETCH_NUM);
+//     return $count[0];
+// }

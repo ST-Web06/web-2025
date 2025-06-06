@@ -5,42 +5,6 @@
     font-family: "Golos UI", sans-serif;
 }
 
-.img {
-    width: 322px;
-    height: 322px;
-}
-
-.userProfile {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.images {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-
-}
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.menu__sidebarIcon {
-
-    margin: 16px;
-    width: 24px;
-    height: 24px;
-    margin: 16px;
-    position: relative;
-    left: 0;
-    cursor: pointer;
-}
-
 .menu {
     position: fixed;
     max-width: 74px;
@@ -53,4 +17,98 @@
     top: 0%;
     padding-top: 40px;
 
+}
+
+.menu__sidebarIcon {
+    margin: 16px;
+    width: 24px;
+    height: 24px;
+    margin: 16px;
+    position: relative;
+    left: 0;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 97px;
+}
+
+.user-profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.user-profile-header__avatar {
+    width: 123px;
+    height: 123px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.user-profile__name {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+
+.description-of-user {
+    font-size: 15px;
+    max-width: 361px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.user-profile-info__description {
+    font-size: 15px;
+    max-width: 361px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+
+.posts-info {
+    padding: 6px 10px 6px 10px;
+    height: 30px;
+    display: flex;
+    background-color: #F2F3F5;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 42px;
+}
+
+.posts-info__icon-gallary {
+    margin-right: 6px;
+    width: 16px;
+    width: 16px;
+}
+
+.posts-info__amount {
+    font-size: 15px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    gap: 2.48px;
+}
+
+.images__img {
+    width: 322.35px;
+    height: 322.35px;
 }
